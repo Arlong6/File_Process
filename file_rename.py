@@ -1,18 +1,22 @@
+#這邊可以同時更改jpg資料與標註檔(如txt,xml....)的檔名
 import glob
 import os
 
+#更改資料夾位址
 jpg_folder=r"C:\Users\Owner\Desktop\123123\TOTAL_new\images"
 xml_folder=r"C:\Users\Owner\Desktop\123123\TOTAL_new\labels"
 
 jpg_files = glob.glob(jpg_folder+'/*')
 xml_files=glob.glob(xml_folder+'/*')
 
+#更改附檔名名字
 extention1=".jpg"
 extention2='.txt'
 
+#命名新的名字
 name="testinggg"
 
-    
+
 def change_jpg(jpg_files,extention1):
     n=0
     for i in jpg_files:
